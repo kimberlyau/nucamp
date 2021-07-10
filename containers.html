@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        .container, .container-fluid {
+            border: solid blue;
+        }
+        .row {
+            border: solid yellow;
+        }
+        .col, .col-4, .col-8 {
+            border: solid red;
+        }
+    </style>
+    <title>Containers example page</title>
+</head>
+
+<body>
+
+    <!--Bootstrap Grid Example-->
+
+    <!--container-fluid adjusts with screen, container class is fixed-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <!--Only put things in columns!-->
+                <!--Row can have 12 columns-->
+                I'm a big row
+            </div>
+        </div>
+        <!--Equally distributed columns-->
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+            <div class="col">10</div>
+            <div class="col">11</div>
+            <div class="col">12</div>
+        </div>
+        <!--Specifying column span size-->
+        <div class="row">
+            <div class="col-4">4/12</div>
+            <div class="col-8">8/12</div>
+        </div>
+    </div>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
