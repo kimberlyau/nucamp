@@ -1,4 +1,5 @@
 $(function() {
+    /* Carousel in index.html */
     $(".carousel").carousel({interval: 2000});
     $("#carouselButton").click(function(){
         /* If currently is paused */
@@ -13,4 +14,14 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
+
+    /* Reserve Campsite */
+    $("#reserveButton").click(function(){
+        $("#reserveModal").modal('show');
+    })
+
+    /* Login Modal */
+    $("#loginButton").click(function(){
+        $("#loginModal").modal('show');
+    })
 });
